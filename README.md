@@ -28,13 +28,13 @@ There is also a `dockerfile` in the project which will make a new environment wi
 
 
 ## Usage
-Running the **Test** executable will execute multiple test cases using the **gtest** framework, covering both scheduling algorithms and *JSON* file operations. These tests are designed to simulate various scenarios and ensure comprehensive testing of the system's functionalities.
+Running the **Test** executable will execute multiple test cases using the **gtest** framework, covering each scheduling algorithm and *JSON* file operations. These tests are designed to simulate various scenarios and ensure comprehensive testing of the system's functionalities.
 
 Running the **Timetabling** executable will run an interactive console program, which will demonstrate scheduling algorithms' functionality in a list of provided options as input data. This interactive menu also supports options like generating random dataset to run algorithms on, or constructing a new dataset from scratch.
 
 
 ## Algorithms used
-The project currently features two distinct scheduling algorithms, each designed for different purposes. Additionally, a **penalty system** has been introduced to evaluate the quality of a timetable. The fewer penalty points a timetable accumulates, the better it is considered.
+The project currently features three distinct scheduling algorithms, each designed for different purposes. Additionally, a **penalty system** has been introduced to evaluate the quality of a timetable. The fewer penalty points a timetable accumulates, the better it is considered.
 
 ### Penalty system:
 For each assignment, the system assigns penalty points as follows:
