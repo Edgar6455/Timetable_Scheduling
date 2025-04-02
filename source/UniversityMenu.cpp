@@ -292,7 +292,7 @@ namespace uMenu
     {
         std::cout << "Scheduling selected timetable (this may take a while)..." << std::endl << std::endl;
         // Load data of the selected file {fileName} from the {samplesPath} into the selected scheduler data structure
-        universities[scheduler]->loadState(samplesPath + fileName);
+        universities[scheduler]->loadState(fileName);
         auto timetables = universities[scheduler]->schedule();  // Call the scheduler
         Timetable::displayInfo(timetables);  // Display timetable(s) as the scheduler result
     }

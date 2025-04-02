@@ -9,14 +9,11 @@ file(GLOB INCLUDE_FILES "${CMAKE_SOURCE_DIR}/include/*.hpp")
 
 add_subdirectory(external/json)
 add_subdirectory(source)
-add_subdirectory(test)
 
 set(SAMPLES_PATH ${CMAKE_SOURCE_DIR}/samples)
-set(TEST_PATH ${CMAKE_SOURCE_DIR}/test)
 set(CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR})
 
-target_compile_definitions(Timetabling PRIVATE SAMPLES_PATH="${SAMPLES_PATH}")
-target_compile_definitions(Test PRIVATE TEST_PATH="${TEST_PATH}")
+target_compile_definitions(tune_me PRIVATE SAMPLES_PATH="${SAMPLES_PATH}")
 
-install(TARGETS Timetabling Test
+install(TARGETS tune_me
         RUNTIME DESTINATION bin)
